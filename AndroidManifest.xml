@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.lukeslog.askme"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="11" />
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
+    <application
+        android:icon="@drawable/qicon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="de.lukeslog.askme.AskMeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+		    android:theme="@android:style/Theme.Light"
+            android:name="de.lukeslog.questionnaire.main.QuestionActivity">
+        </activity>
+       	<activity
+       	    android:theme="@android:style/Theme.Light"
+            android:name="de.lukeslog.questionnaire.main.AGB">
+        </activity>
+        <activity
+       	    android:theme="@android:style/Theme.Light"
+            android:name="de.lukeslog.questionnaire.main.LoadScreen">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Light"
+            android:name="de.lukeslog.questionnaire.main.Summary">
+        </activity>
+        <activity 
+            android:name="de.lukeslog.questionnaire.main.QuestionnaireActivity">
+        </activity>
+    </application>
+
+</manifest>
